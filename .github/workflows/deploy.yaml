@@ -15,12 +15,12 @@ jobs:
         uses: oven-sh/setup-bun@v1
       
       - name: Install dependencies
+        working-directory: ./sunnahpathfinal
         run: bun install
-        working-directory: sunnahpathfinal
       
       - name: Build project
+        working-directory: ./sunnahpathfinal
         run: bun run build
-        working-directory: sunnahpathfinal
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
