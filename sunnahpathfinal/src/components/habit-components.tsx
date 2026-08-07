@@ -834,8 +834,7 @@ export function EveningReflection() {
   });
 
   const handleSubmit = () => {
-    const reflection: EveningReflection = {
-      date: today,
+const reflection: EveningReflectionType = {      date: today,
       dayRating,
       wins,
       challenges,
