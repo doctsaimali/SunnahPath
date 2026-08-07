@@ -36,18 +36,18 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install
+        run: cd sunnahpathfinal && bun install
 
       - name: Build static site
-        run: bun run build
+        run: cd sunnahpathfinal && bun run build
 
       - name: Add .nojekyll
-        run: touch ./out/.nojekyll
+        run: touch ./sunnahpathfinal/out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./sunnahpathfinal/out
 
   deploy:
     environment:
