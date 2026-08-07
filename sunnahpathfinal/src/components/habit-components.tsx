@@ -12,8 +12,8 @@ import {
 } from "@/data/sunnahs";
 import { useHabitEngine, HabitPhase, HabitDifficulty, ImplementationIntention, HabitProgress } from "@/lib/habit-engine";
 import { useSettings, HabitPace, DifficultyPreference, ReviewDay, AccountabilityMode } from "@/lib/settings-store";
-import { useAccountability, EveningReflection, WeeklyReview, CommitmentContract } from "@/lib/accountability-store";
-import { useSunnahTracker } from "@/lib/store";
+import { useAccountability, WeeklyReview, CommitmentContract } from "@/lib/accountability-store";
+import type { EveningReflection as EveningReflectionType } from "@/lib/accountability-store";import { useSunnahTracker } from "@/lib/store";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
